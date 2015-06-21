@@ -22,7 +22,7 @@ end
 
 action :install do
 
-  java_binpath = node['javawin']['binpath'].sub( /<JVM>/, new_resource.jvm )
+  java_binpath = node['javawin']['binpath'].sub( /<KIT>/, new_resource.kit )
   java_binpath.sub!( /<VERSION>/, new_resource.version )
 
   java_root = Pathname( "/Program Files/Java" )
@@ -34,7 +34,7 @@ action :install do
     converge_by("install Java JVM #{new_resource.name}") do
 
       windowsJavaSite = node['javawin']['site']
-      java_url = windowsJavaSite.sub( /<JVM>/, new_resource.jvm )
+      java_url = windowsJavaSite.sub( /<KIT>/, new_resource.kit )
       java_url.sub!( /<VERSION>/, new_resource.version )
 
       windows_zipfile java_root.to_s do
