@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: java-windows
+# Cookbook Name:: java_windows
 # Recipe:: default
 #
 # Copyright 2014, Lonnie VanZandt lonniev@gmail.com
@@ -22,7 +22,7 @@ end
 
 action :install do
 
-  java_binpath = node['java-windows']['binpath'].sub( /<JVM>/, new_resource.jvm )
+  java_binpath = node['java_windows']['binpath'].sub( /<JVM>/, new_resource.jvm )
   java_binpath.sub!( /<VERSION>/, new_resource.version )
 
   java_root = Pathname( "/Program Files/Java" )
@@ -33,7 +33,7 @@ action :install do
   unless java_exe.exist?
     converge_by("install Java JVM #{new_resource.name}") do
 
-      windowsJavaSite = node['java-windows']['site']
+      windowsJavaSite = node['java_windows']['site']
       java_url = windowsJavaSite.sub( /<JVM>/, new_resource.jvm )
       java_url.sub!( /<VERSION>/, new_resource.version )
 

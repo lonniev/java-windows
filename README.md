@@ -1,4 +1,4 @@
-java-windows Cookbook
+java_windows Cookbook
 =====================
 TODO: Enter the cookbook description here.
 
@@ -11,14 +11,14 @@ TODO: List your cookbook requirements. Be sure to include any requirements this 
 
 e.g.
 #### packages
-- `toaster` - java-windows needs toaster to brown your bagel.
+- `toaster` - java_windows needs toaster to brown your bagel.
 
 Attributes
 ----------
 TODO: List your cookbook attributes here.
 
 e.g.
-#### java-windows::default
+#### java_windows::default
 <table>
   <tr>
     <th>Key</th>
@@ -27,7 +27,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['java-windows']['bacon']</tt></td>
+    <td><tt>['java_windows']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -36,17 +36,17 @@ e.g.
 
 Usage
 -----
-#### java-windows::default
+#### java_windows::default
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `java-windows` in your node's `run_list`:
+Just include `java_windows` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[java-windows]"
+    "recipe[java_windows]"
   ]
 }
 ```
