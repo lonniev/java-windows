@@ -20,7 +20,7 @@ default['java_windows'] =
   {
     'title'   => "Java JRE 1.6 for Windows",
     'site'    => "http://installbuilder.bitrock.com/java/<JVM><VERSION>-windows.zip",
-    'binpath' => "<JVM><VERSION>-windows\\java_windows\\bin",    
+    'binpath' => "<JVM><VERSION>-windows\\java-windows\\bin",    
     'jvm'          => "jre",
     'jvm_version'  => "1.6.0_45",
   }
