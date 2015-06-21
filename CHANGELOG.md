@@ -1,11 +1,11 @@
-java_windows CHANGELOG
+javawin CHANGELOG
 ======================
 
-This file is used to list changes made in each version of the java_windows cookbook.
+This file is used to list changes made in each version of the javawin cookbook.
 
 0.1.0
 -----
-- [your_name] - Initial release of java_windows
+- [your_name] - Initial release of javawin
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

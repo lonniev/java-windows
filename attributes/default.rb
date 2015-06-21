@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: java_windows
+# Cookbook Name:: javawin
 # Recipe:: default
 #
 # Copyright 2014, Lonnie VanZandt lonniev@gmail.com
@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-default['java_windows'] =
+default['javawin'] =
   {
     'title'   => "Java JRE 1.6 for Windows",
     'site'    => "http://installbuilder.bitrock.com/java/<JVM><VERSION>-windows.zip",

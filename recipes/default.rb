@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: java_windows
+# Cookbook Name:: javawin
 # Recipe:: default
 #
 # Copyright 2015, Lonnie VanZandt
@@ -7,11 +7,11 @@
 # All rights reserved - Do Not Redistribute
 #
 
-java_windows_jvm node['java_windows']['title'] do
+javawin_jvm node['javawin']['title'] do
   action :install
   
-  jvm node['java_windows']['jvm']
-  version node['java_windows']['version']
+  jvm node['javawin']['jvm']
+  version node['javawin']['version']
   update_path true
   set_home true
 end
