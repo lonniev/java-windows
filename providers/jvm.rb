@@ -22,15 +22,13 @@ end
 
 action :install do
 
-  java_bin = node['javawin']['binpath'].sub( /<KIT>/, new_resource.kit )
-  java_bin.sub!( /<VERSION>/, new_resource.version )
-
-  java_binpath = Pathname( java_bin )
+  java_binpath = node['javawin']['binpath'].sub( /<KIT>/, new_resource.kit )
+  java_binpath.sub!( /<VERSION>/, new_resource.version )
   
   java_root = Pathname( "/Program Files/Java" )
   java_home = java_root.join( java_binpath )
 
-  java_exe = java_binpath.join( "java.exe" )
+  java_exe = java_home.join( "java.exe" )
   
   unless java_exe.exist?
     converge_by("install Java JVM #{new_resource.name}") do
